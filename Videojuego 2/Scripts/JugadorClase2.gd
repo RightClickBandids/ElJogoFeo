@@ -104,17 +104,15 @@ func animacionTree():
 	animacionJ["parameters/Mover/blend_amount"]=moverEstado
 	
 
-
-func _on_Area_body_entered(body):
-	contador = contador+1
-	print("Funciona! :D, este es el disparo numero: ", contador)
-	label.text=str(contador)
-	
-
-	
-	
-	
-
-
 func _on_Timer_timeout():
 	iniciarDisparo=true
+
+
+func _on_Area_area_entered(area):
+	contador=contador+1
+	print("CONTADOR: ",contador)
+
+
+func _on_Area_body_shape_entered(body_id, body, body_shape, area_shape):
+	contador=contador+1
+	print("CONTADOR: ",contador)
