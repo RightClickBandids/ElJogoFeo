@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Tipografias/Doctor Glitch.otf" type="DynamicFontData" id=1]
-[ext_resource path="res://inicio.png" type="Texture" id=2]
-[ext_resource path="res://inicio/Menú.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Menú.gd" type="Script" id=2]
+[ext_resource path="res://Textures-Images/inicio.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -11,7 +11,7 @@ font_data = ExtResource( 1 )
 default_font = SubResource( 1 )
 
 [node name="controlEscenas" type="CanvasLayer"]
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_left = 0.5
@@ -23,7 +23,7 @@ margin_top = -300.0
 margin_right = 512.0
 margin_bottom = 300.0
 theme = SubResource( 2 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

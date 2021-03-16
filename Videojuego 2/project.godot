@@ -16,26 +16,34 @@ _global_script_class_icons={
 [application]
 
 config/name="Videojuego 2"
-run/main_scene="res://EscenaJuego.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Scenes/Menú.tscn"
+config/icon="res://Textures-Images/icon.png"
+
+[autoload]
+
+DisparosAleatorios="*res://Scripts/DisparosAleatorios.gd"
 
 [input]
 
-izquierdaJugdor={
+LEFT={
 "deadzone": 0.5,
-"events": [  ]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
 }
-derechaJugador={
+RIGHT={
 "deadzone": 0.5,
-"events": [  ]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
 }
-arribaJugador={
+UP={
 "deadzone": 0.5,
-"events": [  ]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
 }
-abajoJugador={
+DOWN={
 "deadzone": 0.5,
-"events": [  ]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
 }
 Disparo={
 "deadzone": 0.5,
