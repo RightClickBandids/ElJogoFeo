@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/ClothedLightSkin2.png-2e153b00f71406ebbe6601d245c437cd.s3tc.stex"
-path.etc2="res://.import/ClothedLightSkin2.png-2e153b00f71406ebbe6601d245c437cd.etc2.stex"
+path.s3tc="res://.import/ClothedDarkSkin2.png-0c549a47cbfc4313cc5be2ac059684f8.s3tc.stex"
+path.etc2="res://.import/ClothedDarkSkin2.png-0c549a47cbfc4313cc5be2ac059684f8.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Jugador/PlayerMaterials/ClothedLightSkin2.png"
-dest_files=[ "res://.import/ClothedLightSkin2.png-2e153b00f71406ebbe6601d245c437cd.s3tc.stex", "res://.import/ClothedLightSkin2.png-2e153b00f71406ebbe6601d245c437cd.etc2.stex" ]
+source_file="res://Textures-Images/PlayerMaterials/ClothedDarkSkin2.png"
+dest_files=[ "res://.import/ClothedDarkSkin2.png-0c549a47cbfc4313cc5be2ac059684f8.s3tc.stex", "res://.import/ClothedDarkSkin2.png-0c549a47cbfc4313cc5be2ac059684f8.etc2.stex" ]
 
 [params]
 

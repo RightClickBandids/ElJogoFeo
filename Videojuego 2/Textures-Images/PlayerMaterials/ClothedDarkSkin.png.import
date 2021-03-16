@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ClothedDarkSkin.png-8730d643a0b10cd0204c34270262db10.stex"
+path="res://.import/ClothedDarkSkin.png-ce140b05143ae1b3f49f0742c6c71c42.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jugador/PlayerMaterials/ClothedDarkSkin.png"
-dest_files=[ "res://.import/ClothedDarkSkin.png-8730d643a0b10cd0204c34270262db10.stex" ]
+source_file="res://Textures-Images/PlayerMaterials/ClothedDarkSkin.png"
+dest_files=[ "res://.import/ClothedDarkSkin.png-ce140b05143ae1b3f49f0742c6c71c42.stex" ]
 
 [params]
 

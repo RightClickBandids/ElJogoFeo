@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Animated Human.glb-fbfa5dd7f32c19627ee9d069a3d58c5d.scn"
+path="res://.import/Robot.glb-d539f7f9b5874435dc69f324c2a546aa.scn"
 
 [deps]
 
-source_file="res://Jugador/Animated Human.glb"
-dest_files=[ "res://.import/Animated Human.glb-fbfa5dd7f32c19627ee9d069a3d58c5d.scn" ]
+source_file="res://Enemigos/Robot.glb"
+dest_files=[ "res://.import/Robot.glb-d539f7f9b5874435dc69f324c2a546aa.scn" ]
 
 [params]
 
