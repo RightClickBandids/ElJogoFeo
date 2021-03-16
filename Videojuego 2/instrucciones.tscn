@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://instrucciones.gd" type="Script" id=1]
+
+[node name="intrucciones" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+margin_left = 734.0
+margin_top = 493.0
+margin_right = 999.0
+margin_bottom = 574.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Juego" type="Button" parent="NinePatchRect/VBoxContainer"]
+margin_right = 265.0
+margin_bottom = 20.0
+text = "Juego"
+
+[node name="Regresar " type="Button" parent="NinePatchRect/VBoxContainer"]
+margin_top = 24.0
+margin_right = 265.0
+margin_bottom = 44.0
+text = "Regresar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="NinePatchRect"]
+margin_left = 218.0
+margin_top = 171.0
+margin_right = 798.0
+margin_bottom = 191.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SalirJuego" type="Button" parent="NinePatchRect/VBoxContainer2"]
+margin_right = 580.0
+margin_bottom = 20.0
+text = "Sair Del Juego"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/Juego" to="." method="_on_Juego_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/Regresar " to="." method="_on_Regresar__pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer2/SalirJuego" to="." method="_on_SalirJuego_pressed"]

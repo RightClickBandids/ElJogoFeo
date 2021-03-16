@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://instrucciones.tscn" type="PackedScene" id=1]
+
+[node name="Controlinstrucciones" type="Spatial"]
+
+[node name="intrucciones" parent="." instance=ExtResource( 1 )]
