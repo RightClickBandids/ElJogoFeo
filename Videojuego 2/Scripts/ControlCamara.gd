@@ -15,9 +15,7 @@ var vAceleracion=10
 
 
 func _ready():
-	
-	$ControlHorizontal/ControlVertical/Camara.add_exception(get_parent())
-	
+	$ControlHorizontal/ControlVertical/ClippedCamera.add_exception(get_parent())
 func _input(event):
 	if event is InputEventMouseMotion:
 		camaraHorizontal+=-event.relative.x*hsensibilidad
