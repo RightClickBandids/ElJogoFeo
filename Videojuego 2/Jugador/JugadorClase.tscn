@@ -1727,7 +1727,7 @@ nodes/defensa/position = Vector2( 240, 260 )
 nodes/mover/node = SubResource( 13 )
 nodes/mover/position = Vector2( 240, 440 )
 nodes/output/position = Vector2( 700, 480 )
-node_connections = [ "output", 0, "Blend3", "Blend3", 0, "defensa", "Blend3", 1, "mover", "Blend3", 2, "Trabajando", "mover", 0, "Parado", "mover", 1, "Correr" ]
+node_connections = [ "output", 0, "Blend3", "mover", 0, "Parado", "mover", 1, "Correr", "Blend3", 0, "defensa", "Blend3", 1, "mover", "Blend3", 2, "Trabajando" ]
 
 [node name="AnimatedHuman" instance=ExtResource( 1 )]
 
