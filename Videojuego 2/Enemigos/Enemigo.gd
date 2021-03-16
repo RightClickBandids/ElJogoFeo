@@ -1,9 +1,7 @@
 extends KinematicBody
 
-
 var ComienzoDisparo=true
-var velDisparo=50
-
+var velocidadDisparo=50
 func _physics_process(delta):
 	
 	if $RayCast.is_colliding():
@@ -21,8 +19,7 @@ func disparar():
 	add_child(disparos)
 	disparos.set_as_toplevel(true)
 	disparos.global_transform=$Position3D.global_transform
-	disparos.linear_velocity= disparos.global_transform.basis.x*velDisparo
+	disparos.linear_velocity= disparos.global_transform.basis.x*velocidadDisparo
 	
-
 func _on_Timer_timeout():
-	inicioDisparo=true
+	ComienzoDisparo=true

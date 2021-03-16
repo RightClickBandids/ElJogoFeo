@@ -2,17 +2,13 @@ extends Spatial
 
 var camaraHorizontal=0
 var camaraVertical=0
-#variables para controlar la sensibilidad 
+ 
 var cVerticalMin=75
 var cVerticalMax=-75
 var hsensibilidad=0.1
 var vsensibilidad=0.1
 var hAceleracion=10
 var vAceleracion=10
-
-
-
-
 
 func _ready():
 	$ControlHorizontal/ControlVertical/ClippedCamera.add_exception(get_parent())
