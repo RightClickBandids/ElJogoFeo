@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Tipografias/Doctor Glitch.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Menú.gd" type="Script" id=2]
+[ext_resource path="res://Textures-Images/inicio.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[node name="controlEscenas" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+theme = SubResource( 2 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -512.0
+margin_top = -600.0
+margin_right = 512.0
+rect_min_size = Vector2( 1024, 600 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BInstruciones" type="Button" parent="NinePatchRect/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 24.0
+text = "instrucciones"
+
+[node name="BEmpezar" type="Button" parent="NinePatchRect/VBoxContainer"]
+margin_top = 28.0
+margin_right = 1024.0
+margin_bottom = 52.0
+text = "Empezar juego"
+
+[node name="BSalir" type="Button" parent="NinePatchRect/VBoxContainer"]
+margin_top = 56.0
+margin_right = 1024.0
+margin_bottom = 80.0
+text = "Salir"
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BInstruciones" to="." method="_on_BInstruciones_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BEmpezar" to="." method="_on_BEmpezar_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BSalir" to="." method="_on_BSalir_pressed"]

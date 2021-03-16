@@ -63,7 +63,7 @@ func movimiento():
 	var moverDir=moverDosDireccion()
 	#variable para manejo de la dirección de la cámara
 	var dirCamara=Vector3.ZERO	 #Vector3(0,0,0)
-	var camaraX=$ControlCamara/ControlHorizontal/ControlVertical/ClippedCamera.global_transform
+	var camaraX=$ControlCamara/ControlHorizontal/ControlVertical/Camara.global_transform
 	
 	
 	#obtiene la dirección actual de camara
