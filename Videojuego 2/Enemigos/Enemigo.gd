@@ -1,19 +1,19 @@
 extends KinematicBody
 
 
-var inicioDisparo=true
+var ComienzoDisparo=true
 var velDisparo=50
 
 func _physics_process(delta):
-	#se activa cuando esta a rango de disparo
+	
 	if $RayCast.is_colliding():
-		#print("raycast works")
+		
 		dispararAhora()
 		
 func dispararAhora():
-	if inicioDisparo:
+	if ComienzoDisparo:
 		disparar()
-		inicioDisparo=false
+		ComienzoDisparo=false
 		$Timer.start()
 		
 func disparar():
