@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Videojuego 2"
-run/main_scene="res://Scenes/Menú.tscn"
+run/main_scene="res://Scenes/EscenaInicial.tscn"
 config/icon="res://Textures-Images/icon.png"
 
 [autoload]
